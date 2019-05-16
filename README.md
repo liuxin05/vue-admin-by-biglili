@@ -1,13 +1,14 @@
 # vue-admin-by-biglili
 # 利用vue+axios+vuex+iviewUI去集成的后台管理系统
 # 纯属自己练习
-# 项目尚未成熟、请多指教
+
 
 > A Vue.js project
 
 ## Build Setup
 
 ``` bash
+# 项目尚未成熟、请多指教
 # 安装依赖
 npm install
 
