@@ -5,11 +5,12 @@ import iView from 'iview'
 import 'iview/dist/styles/iview.css'
 // import axios from 'axios'
 // import VueAxios from 'vue-axios'
-
+import VueClipboards from 'vue-clipboards';
+Vue.use(VueClipboards);
 
 Vue.config.productionTip = false
 
-// Vue.use(iView);
+Vue.use(iView);
 // Vue.use(VueAxios,axios);
 
 /* eslint-disable no-new */

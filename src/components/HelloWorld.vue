@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+    <Button type="error" v-clipboard="copyData">点击粘贴复制</Button>
     <Input placeholder="Enter something..." style="width: 300px" />
     <vue-ueditor-wrap ref="ueditor" v-model="msg" :destroy="false" :config="config" @ready="ready" @beforeInit="addCustomUI" @change="hahaha($event)"></vue-ueditor-wrap>
     <button @click="getUEContent()">获取内容</button>
@@ -8,6 +9,7 @@
 
 <script>
 // 1、引入VueUeditorWrap组件
+
 import VueUeditorWrap from 'vue-ueditor-wrap' // ES6 Module
 export default {
   name: 'HelloWorld',
@@ -16,6 +18,7 @@ export default {
   },
   data () {
     return {
+      copyData: 'www.baidu.com',
       // 3、v-model绑定数据
       msg: '<h2><img src="http://img.baidu.com/hi/jx2/j_0003.gif"/>Vue + UEditor + v-model双向绑定</h2>',
       // 4、根据项目需求自行配置,具体配置参见ueditor.config.js源码或 http://fex.baidu.com/ueditor/#start-start
