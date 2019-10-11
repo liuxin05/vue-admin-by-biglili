@@ -3,6 +3,7 @@ import App from './App'
 import router from './router'
 import iView from 'iview'
 import 'iview/dist/styles/iview.css'
+import "./components/style/reset.css";
 // import axios from 'axios'
 // import VueAxios from 'vue-axios'
 import VueClipboards from 'vue-clipboards';

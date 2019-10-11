@@ -2,7 +2,7 @@
   <div class="hello">
     <Button type="error" v-clipboard="copyData">点击粘贴复制</Button>
     <Input placeholder="Enter something..." style="width: 300px" />
-    <button @click="getUEContent()">获取内容</button>
+    <Button type="info" @click="getUEContent()">获取内容</Button>
   </div>
 </template>
 
@@ -20,7 +20,7 @@ export default {
     }
   },
   methods: {
-    hahaha(e){
+    getUEContent(e){
       console.log(e)
     },
     
