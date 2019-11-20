@@ -7,7 +7,10 @@ import "./components/style/reset.css";
 // import axios from 'axios'
 // import VueAxios from 'vue-axios'
 import VueClipboards from 'vue-clipboards';
+import _ from 'lodash'
+
 Vue.use(VueClipboards);
+Vue.prototype._ = _
 
 Vue.config.productionTip = false
 
